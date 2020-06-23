@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         {loading ? (
-          <h4>Loading...1</h4>
+          <h4>Loading...hello</h4>
         ) : (
           <h1>Hello {showName && this.foo()}</h1>
         )}
