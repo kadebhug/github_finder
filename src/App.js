@@ -1,20 +1,13 @@
 import React, { Component } from "react";
+import Navbar from "./components/layout/Navbar";
 import "./App.css";
 
 class App extends Component {
-  foo = () => "Shikaal";
-
   render() {
-    const loading = false;
-    const showName = true;
-
     return (
       <div className="App">
-        {loading ? (
-          <h4>Loading...hello</h4>
-        ) : (
-          <h1>Hello {showName && this.foo()}</h1>
-        )}
+        {/* Using props */}
+        <Navbar />
       </div>
     );
   }
